@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <script type="text/javascript">
+
+
+
+    // iffe *STARTS*
+    (function(){
+
+      // Global Variabl
+      var globalVar = 'Global Variable';
+      console.log(globalVar)
+      // First Func Dec
+      function functionOne (){
+        // Private Variable
+        var privateVar = 'Private Variable';
+        return privateVar
+      }
+
+      // Second Funtion
+      var functionTwo = function (){
+        globalVar = functionOne()
+      }();
+      console.log(globalVar)
+
+    })();
+    // iffe *ENDS*
+
+    </script>
+  </body>
+</html>
